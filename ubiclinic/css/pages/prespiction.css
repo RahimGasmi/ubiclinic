@@ -1,0 +1,145 @@
+@font-face {
+    font-family: balsamiq;
+    src: url(../../font/quicksand.ttf);
+  }
+  @font-face {
+    font-family: southam;
+    src: url(../../font/Southam\ Demo.otf);
+  }
+html{
+    font-size: 65%;
+}
+h1,p{margin-block: 0;margin-inline: 0;}
+body{min-width: 60rem;    font-family: balsamiq;
+    font-weight: 300;
+}
+#content{
+    width: 60rem;
+    margin: 0 auto;
+    border: 2px soild black;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2.5rem;
+}
+.logo{
+    width: 14rem;
+    height: 11rem;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    justify-content: space-evenly;
+}
+.clinic-name{
+    display: inline;
+    color: lightseagreen;
+}
+.doctor-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.doctor-icon{
+    height: 2rem;
+    width: 2rem;
+    fill: lightseagreen;
+    margin-right: .6rem;
+}
+.doctor-name{
+    display: block;
+}
+.phone-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+    color: grey;
+}
+.phone-icon{
+    height: 2rem;
+    width: 2rem;
+    fill: lightseagreen;
+    margin-left: .6rem;
+}
+.number{
+font-size: 2rem;
+font-weight: bold;
+}
+.email-adress{font-size: 2rem;
+    font-weight: bold;}
+.email{    display: flex;
+    flex-direction: row;
+    color: grey;}
+.email-icon{    height: 2rem;
+    width: 2rem;
+    fill: lightseagreen;
+    margin-left: .6rem;
+
+}
+.title{
+    text-align: center;
+    font-size: 3.5rem;
+    color: rgb(59, 59, 59);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+
+}
+.date-patient{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.date{
+    font-size: 2rem;
+}
+.patient{
+    font-size: 2rem;
+}
+.main{
+    line-height: 2.5rem;
+    font-size: 2rem;
+}
+.signature{
+font-family: southam;
+font-size: 8rem;
+text-align: right;
+}
+.print{
+    position: absolute;
+    font-size: 4rem;
+    padding: .7rem 1.4rem;
+    background-color: #06befb;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    left: 45%;
+
+}
+.medicne-title{
+    font-size: 2.5rem;
+    color: rgb(59, 59, 59);
+
+}
+.medicine-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    list-style: arabic-indic;
+    margin-bottom: 2rem;
+
+}
+.medicine-item{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: grey;
+    text-transform: uppercase;
+}

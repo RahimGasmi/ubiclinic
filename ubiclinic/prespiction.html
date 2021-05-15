@@ -1,0 +1,73 @@
+<html>
+    <head>
+<link rel="stylesheet" href="css/pages/prespiction.css">
+    </head>
+    <body>
+        <div id="content">
+        <div class="header">
+            <div class="details">
+            <h1 class="clinic-name">ubiclinic</h1>
+            <div class="doctor-details">
+                <svg class="doctor-icon">
+                    <use xlink:href="css/icon/sprite.svg#icon-user-md"></use>
+                </svg>
+            <h1 class="doctor-name">dr.za3im ahmed</h1>
+
+            </div>
+            <!-- <svg class="side-nav-icon">
+                <use xlink:href="css/icon/sprite.svg#icon-phone"></use>
+                <span>edit patient</span>
+            </svg> -->
+        </div>
+            <img src="img/logowithtext.png" alt="" class="logo">
+            <div class="phone-email">
+                <div class="phone">
+                    <div class="number">066359365</div>
+                    <svg class="phone-icon">
+                        <use xlink:href="css/icon/sprite.svg#icon-phone"></use>
+                        </svg>
+                </div>
+                <div class="email">
+                    <div class="email-adress">test@gmail.com</div>
+                    <svg class="email-icon">
+                        <use xlink:href="css/icon/sprite.svg#icon-envelope"></use>
+                        </svg>
+                </div>
+            </div>
+        </div>
+        <h1 class="title">prespiction</h1>
+        <div class="date-patient">
+            <div class="date">Date: 20/06/2000</div>
+            <div class="patient">Mohamed ali</div>
+        </div>
+        <div class="Medicine">
+            <h1 class="medicne-title">medicine that you need</h1>
+            <ul class="medicine-list">
+                <li class="medicine-item">diclofenac</li>
+                <li class="medicine-item">aspirin</li>
+                <li class="medicine-item">naproxen</li>
+                <li class="medicine-item">Motrin</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1 class="medicne-title" style="margin-bottom: 2rem;">extra reading</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis corrupti accusantium quis hic adipisci est, quae quod praesentium. Recusandae doloremque corporis laborum odio, reprehenderit eos porro officiis soluta iure.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At placeat voluptatem error. Necessitatibus nesciunt natus mollitia, labore facere atque modi. Consectetur ducimus ipsa quaerat soluta sapiente blanditiis, sed quo voluptatibus.
+        </div>
+        <div class="signature">
+            mohamed
+        </div>
+
+    </div>
+    <a onclick="Print()" class="print">Print</a>
+    <script type="text/javascript">     
+        function Print() {    
+           var print = document.getElementById('content');
+           var popupWin = window.open('', '_blank', 'width=640,height=600');
+           popupWin.document.open();
+           popupWin.document.write('<html><head><link rel="stylesheet" href="css/pages/prespiction.css"></head><body onload="window.print()">' + print.innerHTML + '</html>');
+            popupWin.document.close();
+                }
+     </script>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+.center-text{
+    text-align: center;
+}
+.center{
+    align-self: center;
+}
+.margin-bottom-big{
+    margin-bottom: 8rem;
+}
+.red{
+    color: red;
+}
+.margin-bottom-medium{
+    margin-bottom: 4rem;
+}
+.margin-bottom-small{
+    margin-bottom: 1.6rem;
+}
+.margin-top-big{
+    margin-top: 8rem;
+}
+.margin-top-small{
+    margin-top: 1.6rem;
+}
+@media (max-width: 56.25em) {
+.margin-bottom-big{
+    margin-bottom: 5rem;
+}
+.margin-bottom-medium{margin-bottom: 3rem;}
+      }
+      @media (max-width: 600px) {
+    
+    }
+.glyphicon{
+    padding: .3rem .6rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: .5rem;
+
+
+}
+.glyphicon-remove{
+    background-color: rgb(201, 5, 5);
+}
+.glyphicon-modify{
+    background-color: rgb(27, 221, 9);
+}
+.btn-primary{
+font-size: 2.5rem;
+padding: .5rem 1rem;
+border: none;
+border-radius: .8rem;
+margin-top: 2rem;
+margin-bottom: 2rem;
+cursor: pointer;
+background-color: var(--primary-color);
+color: white;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.flexc{
+    display: flex;
+    flex-direction: column;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    justify-items: start;
+}
+.alert{
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin: -1rem 1.5rem 1rem 0;
+    color: rgb(247,247,247)
+}
+.alert-danger{
+background-color: rgb(211, 6, 6);
+}
+.alert-succes{
+    background-color: green;
+}
+.clear{
+    clear: both;
+}
+.fleft{
+    float: left;
+}
+.fright{
+float: right;
+}
+.flext{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+@media (max-width: 500px) {
+    .flext{
+        flex-direction: column-reverse;
+    
+    }
+}
+@media (max-width: 600px) {
+    .grid{
+        grid-template-columns: 1fr;
+        margin-left: 2rem;
+    }
+}
+.space{
+    justify-content: space-around;
+}
+::-webkit-datetime-edit { padding: .5em; }
+
+::-webkit-datetime-edit-text { color: var(--primary-color); padding: 0 0.3em; }

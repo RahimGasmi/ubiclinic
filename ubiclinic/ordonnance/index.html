@@ -1,0 +1,237 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="../css/pages/ordonnance.css">
+    <title>ubiclinic | dashbord</title>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/png">
+    <script src="../js/jQuery.js"></script>
+    <script src="../js/select/src/assets/js/jquery-searchbox.js"></script>
+    <link rel="stylesheet" href="../js/multiselect/jquery.multiselect.css">
+<script src="../js/multiselect/jquery.multiselect.js"></script>
+</style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <a href="#" class="logo">
+                <img src="../img/logo.png" alt="logo" class="logo-img">
+                <img src="../img/logo-text.png" alt="logo-text" class="logo-text">
+            </a>
+            <form action="#" class="search">
+                <input type="text" class="search-input" placeholder="search hotels" id="search">
+                <button class="search-btn">
+                    <svg class="search-icon">
+                        <use xlink:href="../css/icon/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="user-nav">
+                <div class="user-nav-icon-box">
+                    <input type="checkbox" name="enable" id="enable">
+                    <label for="enable" class="notify">
+                        <svg class="user-nav-icon">
+                            <use xlink:href="../css/icon/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-notification">13</span></label>
+                    <div class="notification">
+                        <div class="notification-card">
+                            <div class="user-box">
+                                <img src="../img/user.jpg" alt="logo" class="notification-photo">
+                                <div class="user-box-content">
+                                    <p class="user-box-name">john doe</p>
+                                    <p class="user-box-date">2021-02-13</p>
+                                </div>
+                            </div>
+                            <p class="desc-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore
+                                quaerat eveniet magnam fugit ea quasi consectetur deserunt rem quidem eligendi
+                                asperiores qui iste,</p>
+
+                        </div>
+                        <div class="notification-card">
+                            <div class="user-box">
+                                <img src="../img/user.jpg" alt="logo" class="notification-photo">
+                                <div class="user-box-content">
+                                    <p class="user-box-name">john doe</p>
+                                    <p class="user-box-date">2021-02-13</p>
+                                </div>
+                            </div>
+
+                            <p class="desc-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore
+                                quaerat eveniet magnam fugit ea quasi consectetur deserunt rem quidem eligendi
+                                asperiores qui iste,</p>
+
+                        </div>
+                        <a href="#" class="notification-btn">See all</a>
+                    </div>
+                </div>
+
+                <div class="user-nav-user">
+                    <input type="checkbox" name="logout" id="logout">
+                    <label for="logout" class="user-nav-user">
+                        <img src="../img/user.jpg" alt="logo" class="user-nav-user-photo">
+                        <span class="user-name">Jonas</span></label>
+                    <div class="param">
+                        <a class="logout" href="#">
+                            <svg class="logout-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-power-off"></use>
+                            </svg>
+                            <p class="logout-name">
+                                logout
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav-item">
+                        <a href="../home" class="side-nav-link ">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-home"></use>
+                                <span>dashbord</span>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="../adduser" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-user-plus"></use>
+                                <span>add patient</span>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="../edituser" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-user-minus"></use>
+                                <span>edit patient</span>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="../appointement" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-group"></use>
+                                <span>appointment list</span>
+                            </svg>
+                        </a>
+                    </li> 
+                    <li class="side-nav-item active">
+                        <a href="../ordonnance" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-map"></use>
+                                <span>create a prescription</span>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="../medicine" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-stethoscope"></use>
+                                <span>medicine list</span>
+                            </svg>
+                        </a>
+                    </li> 
+                    <li class="side-nav-item">
+                        <a href="../message/" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-envelope"></use>
+                                <span>messages</span>
+                            </svg>
+                        </a>
+                    </li> 
+                </ul>
+                <div class="legal">
+                    &copy; 2021 By abderragmen gasmi . for liscence project
+                </div>
+            </nav>
+            <div class="main">
+                <h1 class="center-text heading-secondary margin-bottom-medium">create a prescription</h1>
+                <form class="form" action="../prespiction.html">
+                    <div class="form-group">
+                        <label for="name" class="form-label">patient name</label>
+                        <div class="select-wrap">
+                            <select name="lang" class="js-searchBox" style="width:100%">
+                              <option value="1">Python</option>
+                              <option value="2">Java</option>
+                              <option value="3">Ruby</option>
+                              <option value="4">C/C++</option>
+                              <option value="5">C#</option>
+                              <option value="6">JavaScript</option>
+                              <option value="7">PHP</option>
+                              <option value="8">Swift</option>
+                              <option value="9">Scala</option>
+                              <option value="10">R</option>
+                              <option value="11">Go</option>
+                              <option value="12">VisualBasic.NET</option>
+                              <option value="13">Kotlin</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="medicine-list" class="form-label">enter medicne list</label>
+                       <!-- <select name="medicine-list" id="medicine-list" multiple>
+                            <option value="diclofenac">diclofenac</option>
+                            <option value="aspirin">aspirin</option>
+                            <option value="naproxen">naproxen</option>
+                            <option value="motrin">Motrin</option>
+                            <option value="diclofenac">diclofenac</option>
+                            <option value="aspirin">aspirin</option>
+                            <option value="naproxen">naproxen</option>
+                            <option value="motrin">Motrin</option>
+                          </select> -->
+
+
+                          <select class="demo" multiple="multiple">
+                            <option value="diclofenac">diclofenac</option>
+                            <option value="aspirin">aspirin</option>
+                            <option value="naproxen">naproxen</option>
+                            <option value="motrin">Motrin</option>
+                            <option value="diclofena">diclofenac</option>
+                            <option value="aspiri">aspirin</option>
+                            <option value="naproxe">naproxen</option>
+                            <option value="motri">Motrin</option>
+                            <option value="diclofen">diclofenac</option>
+                            <option value="aspir">aspirin</option>
+                            <option value="naprox">naproxen</option>
+                            <option value="motr">Motrin</option>
+                            <option value="diclof">diclofenac</option>
+                            <option value="asp">aspirin</option>
+                            <option value="napr">naproxen</option>
+                            <option value="mo">Motrin</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="details" class="form-label">enter details</label>
+                        <textarea name="details" class="form-input" cols="30" rows="6"></textarea>
+                    </div>
+                    
+
+                   <button class="btn-primary" type="submit">submit</button>
+                </form>
+
+                </div>
+                </div>
+                </div>
+                <script>
+                    $('.js-searchBox').searchBox({elementWidth:'100%'});
+                    $('select[multiple]').multiselect({
+                        columns: 1, 
+                        search : true,
+                        searchText   : true,
+                        searchValue  : false,
+                        placeholder    : 'Select medicines', // text to use in dummy input
+      search         : 'Search',         // search input placeholder text
+      selectedOptions: ' selected',      // selected suffix text
+      selectAll      : 'Select all',     // select all text
+      unselectAll    : 'Unselect all',   // unselect all text
+      noneSelected   : 'None Selected',   // None selected text
+  maxHeight          : 150,  // maximum height of option overlay
+                    });
+
+                   </script>
+            </body></html>

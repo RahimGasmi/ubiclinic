@@ -1,0 +1,267 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/pages/adduser.css">
+        <title>ubiclinic | dashbord</title>
+        <link rel="shortcut icon" href="../img/logo.png" type="image/png">
+
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+    <a href="#" class="logo">
+                <img src="../img/logo.png" alt="logo" class="logo-img">
+                <img src="../img/logo-text.png" alt="logo-text" class="logo-text"> 
+            </a>
+                <form action="#" class="search">
+                    <input type="text" class="search-input" placeholder="search hotels" id="search">
+                    <button class="search-btn">
+                        <svg class="search-icon">
+                            <use xlink:href="../css/icon/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>      
+                <nav class="user-nav"> 
+                    <div class="user-nav-icon-box">
+                       <input type="checkbox" name="enable" id="enable">
+                       <label for="enable" class="notify">
+                        <svg class="user-nav-icon">
+                            <use xlink:href="../css/icon/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-notification">13</span></label>
+                    <div class="notification">
+                        <div class="notification-card">
+                            <div class="user-box">
+                        <img src="../img/doctor.png" alt="logo" class="notification-photo">
+                                <div class="user-box-content">
+                            <p class="user-box-name">john doe</p>
+                            <p class="user-box-date">2021-02-13</p>
+                        </div>
+                        </div>
+                            <p class="desc-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore quaerat eveniet magnam fugit ea quasi consectetur deserunt rem quidem eligendi asperiores qui iste,</p>
+                        
+                        </div>
+                        <div class="notification-card">
+                            <div class="user-box">
+                        <img src="../img/nurse.png" alt="logo" class="notification-photo">
+                                <div class="user-box-content">
+                            <p class="user-box-name">john doe</p>
+                            <p class="user-box-date">2021-02-13</p>
+                        </div>
+                        </div>
+                        
+                            <p class="desc-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore quaerat eveniet magnam fugit ea quasi consectetur deserunt rem quidem eligendi asperiores qui iste,</p>
+                        
+                        </div>
+                        <a href="#" class="notification-btn">See all</a>
+                    </div>
+                    </div>
+
+                    <div class="user-nav-user">
+                        <input type="checkbox" name="logout" id="logout">
+                        <label for="logout" class="user-nav-user">
+                        <img src="../img/doctor.png" alt="logo" class="user-nav-user-photo">
+                        <span class="user-name">Jonas</span></label>
+                        <div class="param">
+                            <a class="logout" href="#">
+                            <svg class="logout-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-power-off"></use>
+                            </svg>
+                            <p class="logout-name">
+                                logout
+                            </p>
+                        </a>
+                        </div>
+                    </div>
+                </nav> 
+            </div>
+            <div class="container">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav-item">
+                            <a href="../home" class="side-nav-link ">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-home"></use>
+                                    <span>dashbord</span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav-item active">
+                            <a href="../adduser" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-user-plus"></use>
+                                    <span>add patient</span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="../edituser" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-user-minus"></use>
+                                    <span>edit patient</span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="../appointement" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-group"></use>
+                                    <span>appointment list</span>
+                                </svg>
+                            </a>
+                        </li> 
+                        <li class="side-nav-item">
+                            <a href="../ordonnance" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-map"></use>
+                                    <span>create a prescription</span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="../medicine" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-stethoscope"></use>
+                                    <span>medicine list</span>
+                                </svg>
+                            </a>
+                        </li> 
+                        <li class="side-nav-item">
+                            <a href="../message/" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-envelope"></use>
+                                    <span>messages</span>
+                                </svg>
+                            </a>
+                        </li> 
+                    </ul>
+                    <div class="legal">
+                        &copy; 2021 By abderragmen gasmi . for liscence project
+                    </div>
+                </nav>
+                <div class="main">
+                    <h1 class="center-text heading-secondary">enter a new patient</h1>
+
+                    <svg class="main-icon">
+                        <use xlink:href="../css/icon/sprite.svg#icon-user-circle"></use>
+                    </svg>
+                    <p class="paragraphe red">* means it required</p>
+                    <form method="post" class="form">
+
+                        <div class="left-form">
+                            <div class="form-group">
+    
+                                    <svg class="icon-form">
+                                        <use xlink:href="../css/icon/sprite.svg#icon-user-circle"></use>
+                                    </svg>
+    
+                                <input type="text" name="first-name" placeholder="first name" class="form-input">
+                                                            <div class="mark">*</div>
+    
+                            </div>
+                           
+                            <div class="form-group">
+                                <svg class="icon-form">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-user-circle"></use>
+                                </svg>
+    
+                            <input type="text" name="last-name" placeholder="last name" class="form-input">
+                            <div class="mark">*</div>
+    
+                        </div>
+                        <div class="form-group">
+                                <svg class="icon-form smaller">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-calendar"></use>
+                                </svg>
+    
+                            <input type="number" name="age" placeholder="age" class="form-input" min="0">
+                            <div class="mark">*</div>
+    
+                        </div>
+                        <!-- <div class="alert alert-danger">test</div> -->
+                       
+    
+    
+                        <div>
+                            <div class="select-input">
+                                <svg class="icon-form smaller">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-venus-mars"></use>
+                                </svg>
+                           <select name="sex" id="sex" style="color: gray;">
+                            <option value="" disabled selected hidden >Choose a gender</option>
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                              </select>
+                              <div class="mark mark-select">*</div>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="select-input">
+                                <svg class="icon-form smaller">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-tint"></use>
+                                </svg>
+                           <select name="blood" id="sex" style="color: gray;">
+                            <option value="" disabled selected hidden >Choose a bloode</option>
+                                <option value="om">O-</option>
+                                <option value="op">O+</option>
+                                <option value="am">A-</option>
+                                <option value="ap">A+</option>
+                                <option value="bm">B-</option>
+                                <option value="bp">B+</option>
+                                <option value="abm">AB-</option>
+                                <option value="abp">AB+</option>
+                              </select>
+                              <div class="mark mark-select">*</div>
+                            </div>
+                        </div>
+    
+                        </div>
+                        <div class="right-form">
+                            <button type="submit" name="submit" class="btn-form margin-bottom-small">submit</button>
+                            <div class="form-group">
+    
+                                <svg class="icon-form smaller">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-envelope"></use>
+                                </svg>
+    
+                            <input type="email" name="email" class="form-input" placeholder="enter your email">
+                            <div class="mark hidden">*</div>
+    
+                        </div>
+                        <div class="form-group">
+                            <svg class="icon-form smaller">
+                                <use xlink:href="../css/icon/sprite.svg#icon-phone"></use>
+                            </svg>
+    
+                        <input type="tel" name="phone" class="form-input" placeholder="enter your phone number">
+                        <div class="mark">*</div>
+    
+                    </div>
+                    <div class="form-group">
+                        <svg class="icon-form smaller">
+                            <use xlink:href="../css/icon/sprite.svg#icon-weight"></use>
+                        </svg>
+
+                    <input type="number" name="width" min="0" class="form-input" placeholder="enter your width on cm">
+                    <div class="mark">*</div>
+
+                </div>
+                <div class="form-group">
+                    <svg class="icon-form smaller">
+                        <use xlink:href="../css/icon/sprite.svg#icon-height"></use>
+                    </svg>
+
+                <input type="number" name="height" min="0" class="form-input" placeholder="enter your height on kg">
+                <div class="mark">*</div>
+
+            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/pages/patient.css">
+        <title>ubiclinic | dashbord</title>
+        <link rel="shortcut icon" href="../img/logo.png" type="image/png">
+
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+    <a href="#" class="logo">
+                <img src="../img/logo.png" alt="logo" class="logo-img">
+                <img src="../img/logo-text.png" alt="logo-text" class="logo-text"> 
+            </a>
+                <form action="#" class="search">
+                    <input type="text" class="search-input" placeholder="search hotels" id="search">
+                    <button class="search-btn">
+                        <svg class="search-icon">
+                            <use xlink:href="../css/icon/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>      
+                <nav class="user-nav"> 
+                    <div class="user-nav-icon-box">
+                       <input type="checkbox" name="enable" id="enable">
+                       <label for="enable" class="notify">
+                        <svg class="user-nav-icon">
+                            <use xlink:href="../css/icon/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-notification">13</span></label>
+                    <div class="notification">
+                        <div class="notification-card">
+                            <div class="user-box">
+                        <img src="../img/user.jpg" alt="logo" class="notification-photo">
+                                <div class="user-box-content">
+                            <p class="user-box-name">john doe</p>
+                            <p class="user-box-date">2021-02-13</p>
+                        </div>
+                        </div>
+                            <p class="desc-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore quaerat eveniet magnam fugit ea quasi consectetur deserunt rem quidem eligendi asperiores qui iste,</p>
+                        
+                        </div>
+                        <div class="notification-card">
+                            <div class="user-box">
+                        <img src="../img/user.jpg" alt="logo" class="notification-photo">
+                                <div class="user-box-content">
+                            <p class="user-box-name">john doe</p>
+                            <p class="user-box-date">2021-02-13</p>
+                        </div>
+                        </div>
+                            <p class="desc-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore quaerat eveniet magnam fugit ea quasi consectetur deserunt rem quidem eligendi asperiores qui iste,</p>
+                        
+                        </div>
+                        <a href="#" class="notification-btn">See all</a>
+                    </div>
+                    </div>
+
+                    <div class="user-nav-user">
+                        <input type="checkbox" name="logout" id="logout">
+                        <label for="logout" class="user-nav-user">
+                        <img src="../img/user.jpg" alt="logo" class="user-nav-user-photo">
+                        <span class="user-name">Jonas</span></label>
+                        <div class="param">
+                            <a class="logout" href="#">
+                            <svg class="logout-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-power-off"></use>
+                            </svg>
+                            <p class="logout-name">
+                                logout
+                            </p>
+                        </a>
+                        </div>
+                    </div>
+                </nav> 
+            </div>
+            <div class="container">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav-item">
+                            <a href="../home" class="side-nav-link ">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-home"></use>
+                                    <span>dashbord</span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="../adduser" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-user-plus"></use>
+                                    <span>add patient</span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="../edituser" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-user-minus"></use>
+                                    <span>edit patient</span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="../appointement" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-group"></use>
+                                    <span>appointment list</span>
+                                </svg>
+                            </a>
+                        </li> 
+                        <li class="side-nav-item">
+                            <a href="../ordonnance" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-map"></use>
+                                    <span>create a prescription</span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="../medicine" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-stethoscope"></use>
+                                    <span>medicine list</span>
+                                </svg>
+                            </a>
+                        </li> 
+                        <li class="side-nav-item">
+                            <a href="../message/" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="../css/icon/sprite.svg#icon-envelope"></use>
+                                    <span>messages</span>
+                                </svg>
+                            </a>
+                        </li> 
+                    </ul>
+                    <div class="legal">
+                        &copy; 2021 By abderragmen gasmi . for liscence project
+                    </div>
+                </nav>
+                <div class="main">
+                    <div class="main-title">
+                        <h1 class="center-text heading-secondary">information patient</h1>
+
+                        <svg class="main-icon">
+                            <use xlink:href="../css/icon/sprite.svg#icon-user-circle"></use>
+                        </svg>
+                    </div>
+                    <div class="grid margin-top-small">
+                        <div class="flexc databox">
+                            <h1>id patient</h1>
+                            <h1 class="data">06</h1>
+                        </div>
+                        <div class="flexc">
+                            <h1>date creation</h1>
+                            <h1 class="data">1999/36/63</h1>
+                        </div>
+                    </div>
+                    <div class="grid margin-top-small">
+                        <div class="flexc databox">
+                            <h1>first name</h1>
+                            <h1 class="data">rahim</h1>
+                        </div>
+                        <div class="flexc">
+                            <h1>last name</h1>
+                            <h1 class="data">tsedsq</h1>
+                        </div>
+                    </div>
+                    <div class="grid margin-top-small">
+                        <div class="flexc databox">
+                            <h1>age</h1>
+                            <h1 class="data">20</h1>
+                        </div>
+                        <div class="flexc">
+                            <h1>gender</h1>
+                            <h1 class="data">male</h1>
+                        </div>
+                    </div>
+                    <div class="grid margin-top-small">
+                        <div class="flexc databox">
+                            <h1>weight</h1>
+                            <h1 class="data">70kg</h1>
+                        </div>
+                        <div class="flexc  databox">
+                            <h1>height</h1>
+                            <h1 class="data">180cm</h1>
+                        </div>
+                        <div class="flexc  databox">
+                            <h1>blood</h1>
+                            <h1 class="data">O+</h1>
+                        </div>
+                    </div>
+                    <div class="grid margin-top-small">
+                        <div class="flexc databox">
+                            <h1>phone</h1>
+                            <h1 class="data">0362395238</h1>
+                        </div>
+                        <div class="flexc">
+                            <h1>email</h1>
+                            <h1 class="data">dqsqdsqs@qdsqd.qds</h1>
+                        </div>
+                        
+                    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

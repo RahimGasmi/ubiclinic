@@ -1,0 +1,100 @@
+
+.heading-primary {
+  color: var(--dark-grey-1);
+  text-transform: uppercase;
+}
+.heading-secondary{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-image: linear-gradient(315deg, #60dfcd 0%, #1e9afe 74%);
+  display: block;
+  -webkit-background-clip: text;
+  background-clip: text; /*for making text in linear gradienr*/
+  color: transparent;
+  letter-spacing: .2rem;
+
+}
+.heading-third{
+  font-size: 2rem;
+  color: var(--dark-grey-3);
+  font-size: 700;
+  text-transform: uppercase;
+  display: block;
+}
+.paragraphe{
+  font-size: 1.6rem;
+}
+.paragraphe :not(.paragraphe:last-child){
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  
+}
+
+@media (max-width: 56.25em) {
+  .heading-secondary{
+font-size: 3rem;
+
+  }
+  
+}
+@media (max-width: 600px) {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:var(--primary-color-so-2-light) ;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color-light);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+::-moz-selection {
+  color: white;
+  background: var(--primary-color);
+}
+
+::selection {
+  color: white;
+  background: var(--primary-color);
+}
+/*# sourceMappingURL=typography.css.map */

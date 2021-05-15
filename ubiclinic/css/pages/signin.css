@@ -1,0 +1,218 @@
+@import "../base/animation.css";
+@import "../base/base.css";
+@import "../base/typography.css";
+@import "../base/utilities.css";
+@import "../base/variables.css";
+
+/* @font-face {
+    font-family: quicksand;
+    src: url(font/quicksand.ttf);
+  }
+html{    font-size: 70%;
+}
+*{
+    box-sizing: border-box;
+} */
+/* :root{
+    --primary-color:#06bcfb;
+    --primary-color-op:#06bcfb98;
+} */ 
+body{
+    background-color: var(--primary-color-op);
+background-image: linear-gradient(315deg, #06befb74 0%, #4885ee70 74%), url(../../img/854206.jpg);
+    /* background-image : linear-gradient(to top right , #20bf559f 0%, #01bbef9f 74%), url(854206.jpg); */
+    background-repeat:repeat;
+    background-size: cover;
+    font-family:quicksand;
+    
+    
+}
+
+p{margin-block-start: 0;margin-block-end: 0;}
+.bage{
+
+    height: 50rem;
+    width: 80rem;
+    margin: 0 auto;
+    /* position: absolute; */
+    border-radius: 25px;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    background-color: rgba(0, 0, 0, 0.623);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.151);
+}
+.form{
+background-color: white;
+padding: 10rem 5rem;
+
+}
+.form-title{
+background-image: linear-gradient(315deg, #06befb 0%, #4885ee 74%);
+color: white;
+padding: 12rem 4rem;
+
+}
+.form-title-head{
+font-size: 2.5rem;
+text-transform: uppercase;
+margin-bottom: 3rem;
+text-align: center;
+}
+.form-title-head::after{
+    content: "";
+    display: block;
+    height: .5rem;
+    width: 12rem;
+    background-color: white;
+    margin: 2rem auto;
+    transition: transform .8s;
+}
+.form-title-head:hover.form-title-head::after{
+    transform: scaleX(1.5);
+}
+.form-title-sub{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin-bottom: 5rem;
+    word-spacing: .8rem;
+    line-height: 2.5rem;
+}
+.form-title-btn{
+    margin-top: 5rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 2rem;
+    border: 2px solid white;
+    margin-left: 8rem;
+    border-radius: 5rem;
+    transition: all .2s;
+}
+.form-title-btn:hover{
+    background-color: white;
+    color: #06bcfb;
+}
+.form-head{
+    color: rgb(118, 116, 116);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    text-align: center;
+
+}
+.form-head::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    width: 7rem;
+    background-color: var(--primary-color);
+    margin: 1.4rem auto;
+    transition: transform .8s;
+    margin-bottom: 5rem;
+}
+.form-head:hover.form-head::after{
+    
+    transform: scaleX(1.5);
+}
+.form-group .input{
+    border: 0;
+    font-family: inherit;
+    font-size: 1.8rem;
+    border-bottom:2px solid gray;
+    margin-bottom: 5rem;
+    display: block;
+    width: 100%;
+
+}
+.form-label{
+    position: absolute;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    top: 0;
+    transition: all .2s;
+    margin-top: -2rem;
+    display: block;
+}
+.form-group{position:relative;}
+.form-group .input::placeholder{
+    color: transparent;
+}
+
+.form-group .input:focus{
+outline: none;
+border-bottom:2px solid var(--primary-color);
+transition: all .5s;
+}
+.form-group .input:placeholder-shown ~ .form-label {
+    transition: .2s;
+    color: gray;
+    font-size: 2rem;
+    cursor: text;
+    top: 2rem;
+  }
+  .form-btn{
+      border: 0;
+      width: 100%;
+      display: block;
+      font-size: 2.5rem;
+      color: white;
+      background-color: var(--primary-color);
+      padding: 1rem 0;
+      
+  }
+  @media only screen and (max-width: 1200px) {
+   body{
+    background-image: linear-gradient(315deg, #06befb74 0%, #4885ee70 74%);
+  } }
+  @media only screen and (max-width: 1000px) {
+      html{
+          font-size: 65%;
+      }
+      
+    /* .bage{
+        height: 100%;
+        width: 100%;
+    } */
+  }
+  @media only screen and (max-width: 870px) {
+    html{
+        font-size: 55%;
+    }
+    .bage{
+        height: 100%;
+        
+    } 
+  }
+  @media only screen and (max-width: 720px) {
+    html{
+        font-size: 50%;
+    }
+    .bage{
+        height: 100vh;
+        width: 100%;
+        
+    } 
+}
+@media only screen and (max-width: 650px) {
+    .bage{
+        width: 100vw;
+        grid-template-columns: 1fr;
+
+        
+    }
+    .form-title{
+        padding: 6rem;
+    }
+    .form{
+        padding: 5rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .form-title{
+        display: none;
+    }
+}

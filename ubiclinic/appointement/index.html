@@ -1,0 +1,341 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/pages/appointement.css">
+        <title>ubiclinic | dashbord</title>
+        <link rel="shortcut icon" href="../img/logo.png" type="image/png">
+          <script src="../js/jQuery.js"></script>
+<script src="../js/select/src/assets/js/jquery-searchbox.js"></script>
+
+
+    </head>
+    <body>
+        <div class="content">
+          <div id="popup">
+            <div class="check">
+              <h1>do you want to remove this patient</h1>
+              <div class="btns">
+                <a href="#popup" class="yes">yes</a>
+                <a href="" class="cancel">cancel</a>
+              </div>
+              </div>
+            </div>
+            <div id="popup-new">
+              <div class="new-app">
+                  <a href="#" class="remove-btn">X</a>
+
+              <form method="POST" class="form" autocomplete="off">
+
+                  
+                      <div class="form-group">
+                        <label class="form-label" for="name"">name</label>
+                      <div class="select-wrap">
+                        <select name="lang" class="js-searchBox" style="width:100%">
+                          <option value="1">Python</option>
+                          <option value="2">Java</option>
+                          <option value="3">Ruby</option>
+                          <option value="4">C/C++</option>
+                          <option value="5">C#</option>
+                          <option value="6">JavaScript</option>
+                          <option value="7">PHP</option>
+                          <option value="8">Swift</option>
+                          <option value="9">Scala</option>
+                          <option value="10">R</option>
+                          <option value="11">Go</option>
+                          <option value="12">VisualBasic.NET</option>
+                          <option value="13">Kotlin</option>
+                        </select>
+                      </div>
+                  </div>
+                  
+                  
+
+                  
+                      <div class="form-group">
+                      <label class="form-label" for="date">choose date</label>
+                      <input type="date" name="date" min="2017-08-15" class="input">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="time">choose time</label>
+                    <input type="time" name="time"  class="input">
+                </div>
+                  <button class="form-btn" type="submit">submit</button>
+              </form>
+          </div>
+          </div>
+            <div class="header">
+    <a href="#" class="logo">
+                <img src="../img/logo.png" alt="logo" class="logo-img">
+                <img src="../img/logo-text.png" alt="logo-text" class="logo-text"> 
+            </a>
+                <form action="#" class="search">
+                    <input type="text" class="search-input" placeholder="search hotels" id="search">
+                    <button class="search-btn">
+                        <svg class="search-icon">
+                            <use xlink:href="../css/icon/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>      
+                <nav class="user-nav"> 
+                    <div class="user-nav-icon-box">
+                       <input type="checkbox" name="enable" id="enable">
+                       <label for="enable" class="notify">
+                        <svg class="user-nav-icon">
+                            <use xlink:href="../css/icon/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-notification">13</span></label>
+                    <div class="notification">
+                        <div class="notification-card">
+                            <div class="user-box">
+                        <img src="../img/doctor.png" alt="logo" class="notification-photo">
+                                <div class="user-box-content">
+                            <p class="user-box-name">john doe</p>
+                            <p class="user-box-date">2021-02-13</p>
+                        </div>
+                        </div>
+                            <p class="desc-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore quaerat eveniet magnam fugit ea quasi consectetur deserunt rem quidem eligendi asperiores qui iste,</p>
+                        
+                        </div>
+                        <div class="notification-card">
+                            <div class="user-box">
+                        <img src="../img/nurse.png" alt="logo" class="notification-photo">
+                                <div class="user-box-content">
+                            <p class="user-box-name">john doe</p>
+                            <p class="user-box-date">2021-02-13</p>
+                        </div>
+                        </div>
+                        
+                            <p class="desc-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore quaerat eveniet magnam fugit ea quasi consectetur deserunt rem quidem eligendi asperiores qui iste,</p>
+                        
+                        </div>
+                        <a href="#" class="notification-btn">See all</a>
+                    </div>
+                    </div>
+
+                    <div class="user-nav-user">
+                        <input type="checkbox" name="logout" id="logout">
+                        <label for="logout" class="user-nav-user">
+                        <img src="../img/doctor.png" alt="logo" class="user-nav-user-photo">
+                        <span class="user-name">Jonas</span></label>
+                        <div class="param">
+                            <a class="logout" href="#">
+                            <svg class="logout-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-power-off"></use>
+                            </svg>
+                            <p class="logout-name">
+                                logout
+                            </p>
+                        </a>
+                        </div>
+                    </div>
+                </nav> 
+            </div>
+            
+            <div class="container">
+              
+              <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav-item">
+                        <a href="../home" class="side-nav-link ">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-home"></use>
+                                <span>dashbord</span>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="../adduser" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-user-plus"></use>
+                                <span>add patient</span>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="../edituser" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-user-minus"></use>
+                                <span>edit patient</span>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="side-nav-item active">
+                        <a href="../appointement" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-group"></use>
+                                <span>appointment list</span>
+                            </svg>
+                        </a>
+                    </li> 
+                    <li class="side-nav-item">
+                        <a href="../ordonnance" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-map"></use>
+                                <span>create a prescription</span>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="../medicine" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-stethoscope"></use>
+                                <span>medicine list</span>
+                            </svg>
+                        </a>
+                    </li> 
+                    <li class="side-nav-item">
+                        <a href="../message/" class="side-nav-link">
+                            <svg class="side-nav-icon">
+                                <use xlink:href="../css/icon/sprite.svg#icon-envelope"></use>
+                                <span>messages</span>
+                            </svg>
+                        </a>
+                    </li> 
+                </ul>
+                <div class="legal">
+                    &copy; 2021 By abderragmen gasmi . for liscence project
+                </div>
+            </nav>
+                <div class="main">
+
+                    <h2 class="title">today is <span class="date">1694/53/62</span></h2>
+                    <div class="flext">
+
+                    <a href="#popup-new" class="table-btn center margin-top-small">add new appointement</a>
+                                        <h1 class="center-text center heading-secondary ">appointment list</h1>
+                                      </div>
+                    <div class="table">
+    
+                        <div class="row tab-header">
+                          <div class="cell">
+                            number
+                          </div>
+                          <div class="cell">
+                            name
+                          </div>
+                          <div class="cell">
+                            age
+                          </div>
+                          <div class="cell">
+                            phone
+                          </div>
+                          <div class="cell">
+                            date
+                          </div>
+                          <div class="cell">
+                            time
+                          </div>
+                          <div class="cell">
+                            remove
+                          </div>
+                        </div>
+                        
+                        <div class="row">
+                          <div class="cell" data-title="number">
+                            01
+                          </div>
+                          <div class="cell" data-title="name">
+                            Joseph Smith
+                          </div>
+                          <div class="cell" data-title="age">
+                            56
+                          </div>
+
+                          <div class="cell" data-title="phone">
+                            0354698734
+                          </div>
+                          <div class="cell" data-title="date">
+                            1999/36/63
+                          </div>
+                          <div class="cell" data-title="time">
+                            05:30 pm
+                          </div>
+                          <div class="cell" data-title="action">
+                              <a  href="#popup"><span class="glyphicon glyphicon-remove">X</span></a>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="cell" data-title="number">
+                              02
+                            </div>
+                            <div class="cell" data-title="name">
+                              rahim test
+                            </div>
+                            <div class="cell" data-title="age">
+                              36
+                            </div>
+                            <div class="cell" data-title="phone">
+                              0635976389
+                            </div>
+                            <div class="cell" data-title="date">
+                              1999/36/63
+                            </div>
+                            <div class="cell" data-title="time">
+                              05:30 pm
+                            </div>
+                            <div class="cell" data-title="action">
+                                <a  href="#popup"><span class="glyphicon glyphicon-remove">X</span></a>
+                              </div>
+                          </div>
+                        
+                          <div class="row">
+                            <div class="cell" data-title="number">
+                              03
+                            </div>
+                            <div class="cell" data-title="name">
+                              John Smith
+                            </div>
+                            <div class="cell" data-title="age">
+                              18
+                            </div>
+                            <div class="cell" data-title="phone">
+                              0954663734
+                            </div>
+                            <div class="cell" data-title="date">
+                              1999/36/63
+                            </div>
+                            <div class="cell" data-title="time">
+                              05:30 pm
+                            </div>
+                            <div class="cell" data-title="action">
+                                <a  href="#popup"><span class="glyphicon glyphicon-remove">X</span></a>
+                              </div>
+                          </div>
+                        
+                          <div class="row">
+                            <div class="cell" data-title="number">
+                              04
+                            </div>
+                            <div class="cell" data-title="name">
+                              Joseph breem
+                            </div>
+                            <div class="cell" data-title="age">
+                              65
+                            </div>
+                            <div class="cell" data-title="phone">
+                              03369163434
+                            </div>
+                            <div class="cell" data-title="date">
+                              1999/36/63
+                            </div>
+                            <div class="cell" data-title="time">
+                              05:30 pm
+                            </div>
+                            <div class="cell" data-title="action">
+                                <a  href="#popup"><span class="glyphicon glyphicon-remove">X</span></a>
+                              </div>
+                          </div>
+                        
+                      </div>
+
+                    </div>
+                    </div>
+                    </div>
+                    <script>
+                     $('.js-searchBox').searchBox({elementWidth:'100%'});
+                     
+
+                    </script>
+                
+                    </body>
+                    </html>
