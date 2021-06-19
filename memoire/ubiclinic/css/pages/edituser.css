@@ -1,0 +1,226 @@
+@import "../base/animation.css";
+@import "../base/base.css";
+@import "../base/typography.css";
+@import "../base/utilities.css";
+@import "../base/variables.css";
+@import "../layout/header.css";
+@import "../layout/sidebar.css";
+@import "../layout/table.css";
+body{
+    background-color: var(--primary-color-op);
+    background-image: linear-gradient(315deg, #06befb74 0%, #4885ee70 74%), url(../../img/854206.jpg);
+        /* background-image : linear-gradient(to top right , #20bf559f 0%, #01bbef9f 74%), url(854206.jpg); */
+        background-size: cover;
+        font-family:quicksand;
+}
+ 
+.content{
+    background-color: white;
+    width: 95%;
+    height: max-content;
+margin: 3rem auto;
+
+}
+.main{
+    width: 100%;
+    height: max-content;
+}
+.modify-icon{
+    height: 2rem;
+    width: 2rem;
+    fill: white;
+    background-color: yellow;
+    padding: .3rem .6rem;
+}
+
+
+
+#popup{
+    position: fixed;
+height: 100%;
+width: 100%;
+z-index: 50;
+opacity: 0;
+visibility: hidden;
+
+}
+#popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+.new-medicine{
+    width: 35%;
+    height: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-40%) scale(0);
+    background-color: white;
+    transition: all .5s;
+}
+#popup:target .new-medicine{
+    transform: translate(-50%,-40%) scale(1);
+}
+.remove-btn{
+    z-index: 100;
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+.remove-btn:hover{
+    color: red;
+}
+.form{margin: 0 auto;
+padding: 5rem;
+}
+.form-group{
+padding-bottom: 1rem;
+}
+.form-label{
+display: block;
+padding-bottom: 1rem;
+font-size: 1.9rem;
+font-weight: bold;
+
+}
+.form-input{
+font-size: 1.7rem;
+border: 2px solid var(--primary-color);
+}
+.form-input:focus{
+    outline: none;
+}
+.form-btn{
+    border: none;
+    padding: .6rem 1.2rem;
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+#modify{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+}
+.modify-form{
+    width: fit-content;
+    padding: 2rem 1rem;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    background-color: white;
+}
+.form-modify{
+    margin: 0 auto;
+    padding: 5rem;
+}
+@media (max-width: 1060px) {
+    .main .table .row .cell{
+        padding: 9px 6px;
+    }
+}
+@media (max-width: 870px) {
+    .container{
+        flex-direction: column;
+    }
+    .legal{
+        display: none;
+    }
+    .sidebar{
+        width: 100%;
+        height: fit-content;
+    }
+    .side-nav{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .side-nav-icon{
+    width: 1.50rem;
+    height: 1.50rem;
+    margin-right: 1rem;
+    }
+    .side-nav-item:not(:last-child){
+        margin:0;
+    }
+    .side-nav-item{
+        flex: 1;
+    }
+    .legal{display: none;}
+    .side-nav-link:link,.side-nav-link:visited{
+        justify-content: center;
+        padding: 1rem;
+    }
+}
+@media (max-width: 570px) {
+    .main .table .row .cell{
+        padding: 9px 3px;
+    }
+    .glyphicon{
+        padding:.2rem;
+
+    
+    
+    }
+}
+.cell.email{
+    font-size: 1.3rem;word-break: break-all
+}
+@media screen and (max-width: 1000px) {
+    .cell.email {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .table{
+        width: 100%;
+    }
+
+  }
+@media screen and (max-width: 520px) {
+    .main .table .row .cell{
+        padding: 3px;
+    }
+
+}
+@media screen and (max-width: 520px) {
+    .row {
+      padding: 8px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    .row.tab-header{
+        display: flex;
+        justify-content: space-between; 
+    }
+  
+  .cell {
+    padding: 6px 12px;
+    display: table-cell;
+  }}
+  @media screen and (max-width: 470px) {
+    .cell.email {
+        font-size: 1.8rem;
+      }
+      .row{
+          display: block;
+
+      }
+      .row.tab-header{
+          display: block;
+      }
+    .cell {
+      padding: 2px 12px;
+      display: block;
+      font-size: 1.8rem;
+
+    }
+  }

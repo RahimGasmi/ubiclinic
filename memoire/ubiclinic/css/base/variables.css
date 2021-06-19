@@ -1,0 +1,33 @@
+:root {
+
+  /*Color*/
+
+    --primary-color:#06bcfb;
+    --primary-color-op:#06bcfb98;
+    --primary-color-light:#85d6f0;
+    --primary-color-so-light:#def7ff;
+    --primary-color-so-2-light:#f5f9fb;
+
+
+  --seconde-color:#4885ee;
+--light-grey:#f7f7f7;
+--dark-grey-2:#777;
+--dark-grey-3:#999;
+--dark-grey-1:#333;
+--dark-grey-4:rgb(79, 79, 79);
+  --grey:#ccc;
+--light-grey-1:#faf9f9;
+--light-grey-2:#f4f2f2;
+--light-grey-3:#f8eeee;
+--light-grey-4:#ccc;
+  /*Size*/
+  --grid-width:114rem;
+  --grid-horizantal:6rem;
+  /*font*/
+  --default-font:1.6rem;
+  /*boxshadox*/
+  --dark-shadow:0 2rem 5rem rgba(0, 0, 0, 0.425);
+  --light-shadow:0 2rem 5rem rgba(0, 0, 0, 0.151);
+}
+
+/*# sourceMappingURL=variables.css.map */
